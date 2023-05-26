@@ -6,3 +6,10 @@ authors = ["VS Code <vscode@microsoft.com>"]
 [[bin]]
 name = "hello_remote_world"
 path = "test-project/src/main.rs"
+edition = "2021"
+
+[dependencies]
+reqwest = { version = "0.11.18", features = ["blocking", "json"] }
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+serde_json = "1"
